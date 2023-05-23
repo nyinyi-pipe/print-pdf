@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1>Print / Export PDF</h1>
+    <PrintButton />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PrintButton from './components/PrintButton.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    PrintButton,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
